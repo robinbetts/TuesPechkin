@@ -37,6 +37,9 @@ namespace TuesPechkin
         [WkhtmltoxSetting("load.loadErrorHandling")]
         public ContentErrorHandling? ErrorHandling { get; set; }
 
+        [WkhtmltoxSetting("load.mediaLoadErrorHandling")]
+        public ContentErrorHandling? MediaErrorHandling { get; set; }
+
         [WkhtmltoxSetting("load.password")]
         public string Password { get; set; }
 

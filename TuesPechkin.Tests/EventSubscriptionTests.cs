@@ -32,10 +32,10 @@ namespace TuesPechkin.Tests
             var count = 0;
 
             RunConversion(
-                c => c.Warning += (s, a) => count++,
+                c => c.Error += (s, a) => count++,
                 Document(new ObjectSettings
                 {
-                    PageUrl = "nonexistent.website.com",
+                    PageUrl = "http://not-a-website.google.com",
                     LoadSettings =
                     {
                         ErrorHandling = LoadSettings.ContentErrorHandling.Abort
@@ -84,10 +84,63 @@ namespace TuesPechkin.Tests
                 c => c.Warning += (s, a) => count++,
                 Document(new ObjectSettings 
                 { 
-                    PageUrl = "nonexistent.website.com",
+                    PageUrl = "http://www.google.com/missing-media-file-causes-warning.png"
+                }));
+
+            Assert.IsTrue(count > 0);
+        }
+
+        [TestMethod]
+        public void MissingPageRaiseErrors()
+        {
+            var count = 0;
+
+            RunConversion(
+                c => c.Error += (s, a) => count++,
+                Document(new ObjectSettings
+                {
+                    PageUrl = "http://not-a-website.google.com",
                     LoadSettings =
                     {
                         ErrorHandling = LoadSettings.ContentErrorHandling.Abort
+                    }
+                }));
+
+            Assert.IsTrue(count > 0);
+        }
+
+        [TestMethod]
+        public void ErrorStatusCodeRaiseErrors()
+        {
+            var count = 0;
+
+            RunConversion(
+                c => c.Error += (s, a) => count++,
+                Document(new ObjectSettings
+                {
+                    PageUrl = "http://getstatuscode.com/500",
+                    LoadSettings =
+                    {
+                        ErrorHandling = LoadSettings.ContentErrorHandling.Abort
+                    }
+                }));
+
+            Assert.IsTrue(count > 0);
+        }
+
+        [TestMethod]
+        public void MissingMediaFilesRaiseErrors()
+        {
+            var count = 0;
+
+            RunConversion(
+                c => c.Error += (s, a) => count++,
+                Document(new ObjectSettings
+                {
+                    PageUrl = "http://www.google.com/missing-medial-file-causes-error.png",
+                    LoadSettings =
+                    {
+                        MediaErrorHandling = LoadSettings.ContentErrorHandling.Abort
                     }
                 }));
 
