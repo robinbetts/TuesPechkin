@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>TuesPechkin.Wkhtmltox.Win64</id>
+    <id>TuesPechkin.Wkhtmltox.Win64-Viz</id>
     <version>$version$</version>
-    <title>TuesPechkin.Wkhtmltox.Win64</title>
+    <title>TuesPechkin.Wkhtmltox.Win64-Viz</title>
     <authors>tuespetre</authors>
     <owners>tuespetre</owners>
-    <projectUrl>https://github.com/tuespetre/TuesPechkin</projectUrl>
+    <projectUrl>https://github.com/robinbetts/TuesPechkin</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A bundled copy of wkhtmltox.dll for use with TuesPechkin.</description>
     <copyright>Copyright 2015</copyright>

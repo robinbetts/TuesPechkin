@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TuesPechkin.Wkhtmltox.Win64")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("TuesPechkin.Wkhtmltox.Win64-Viz")]
+[assembly: AssemblyDescription("Contains embedded wkhtmltox_64.dll version 0.12.4.1-viz")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("TuesPechkin.Wkhtmltox.Win64")]

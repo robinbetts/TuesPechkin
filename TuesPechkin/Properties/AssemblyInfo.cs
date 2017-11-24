@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("TuesPechkin")]
+[assembly: AssemblyTitle("TuesPechkin-Viz")]
 [assembly: AssemblyDescription(".NET wrapper for wkhtmltopdf; supports 32-bit, 64-bit, multi-threaded and IIS environments.")]
 [assembly: AssemblyProduct("TuesPechkin")]
 [assembly: AssemblyCopyright("Copyright 2014 Derek Gray")]
