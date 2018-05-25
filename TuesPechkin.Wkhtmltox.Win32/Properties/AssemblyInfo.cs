@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("TuesPechkin.Wkhtmltox.Win32-Viz")]
-[assembly: AssemblyDescription("Contains embedded wkhtmltox_32.dll version 0.12.4.1-viz")]
+[assembly: AssemblyDescription("Contains embedded wkhtmltox_32.dll version 0.12.4.2-viz")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Vizolution")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("TuesPechkin.Wkhtmltox.Win32")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCopyright("Copyright © 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,4 +32,4 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.12.4.1")]
+[assembly: AssemblyVersion("0.12.4.2")]
